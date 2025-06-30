@@ -1,0 +1,204 @@
+    @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+    * {margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;}
+
+    body {
+        height: 100vh;
+    }
+
+    header {
+        height: 90px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+
+    nav {
+            width: 60%;
+        }
+
+    ul {
+            display: flex;
+            width:100%; 
+            justify-content: space-between;
+        }
+
+    li {list-style: none;
+        color: white;
+        font-family: "Kdam Thmor Pro", sans-serif;
+        font-size: 19px;
+        transition: .5s;
+        cursor: pointer; 
+        }
+
+    li:hover {
+            color: #D21617;
+        }
+
+    #logo {
+            width: 150PX;
+            height: auto;
+        }
+
+
+    .contact-pai {
+    margin: 0;
+    padding: 20px;
+    background-color: black;
+    height: 100%;
+    background-image: url(aaaaa.jpg);
+    background-size: cover; 
+    background-position: 40% 50% ;}
+    
+
+    .contact-filho1 {
+        padding: 20px 0px 0px 100px;
+        width: 700px;
+        height: 600px;
+    }
+
+    h1, h2 {
+        color: #FFF;
+        font-family: "Kdam Thmor Pro", sans-serif;
+    }
+
+    span {
+        color: #FFF;
+        font-family: "Kdam Thmor Pro", sans-serif;
+        font-size: 14px;
+    }
+
+    form {
+        width:25%;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+        column-gap: 20px;
+    }
+
+ .campo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+
+
+    label { 
+        color: #FFF;
+        font-family: "Kdam Thmor Pro", sans-serif;
+        font-size: 20px;
+        background-color: #ffffff00;
+        width: 80px;
+    }
+
+    input {
+        padding: 5px;
+        height: 30px;
+        width: 150px;
+        color: #300303;
+        font-family: "Kdam Thmor Pro", sans-serif;
+        font-size: 14px;
+        background-color: #ffffff;
+        border: #000000 2px solid;
+        border-radius: 7px;
+    }
+
+    textarea {
+        padding: 5px;
+        color: #300303;
+        font-family: "Kdam Thmor Pro", sans-serif;
+        font-size: 18px;
+        height: 200px;
+        width: 274px;
+        box-sizing: border-box;
+        background-color: rgb(255, 255, 255);
+        border: #FFF 2px solid;
+        border-radius: 10px;
+        display: block;}
+
+.Enviar {
+    grid-column: 1 / -1; 
+    justify-self: start; 
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    background-color: #D21617;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+} 
+
+.Enviar:hover {
+    background-color: #FFF;
+    color: #000;
+}
+
+footer {
+    background-color: black;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+span {
+    color: #FFF;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.footer-navigation {display: none;}
+   
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation {display: block;}
+
+    html,body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {display: none;} 
+    
+ .contact-pai {width: 100%; display: flex; flex-direction: column; align-items: center; padding: 0 5px 0 0;}
+ 
+.contact-filho1 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    display: flex;              
+    flex-direction: column;     
+    align-items: center;        
+    justify-content: center;    
+    text-align: center;         
+}
+
+  form {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+}   
+   
+        .Enviar {
+        width: 100%;
+        justify-self: center;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+}
